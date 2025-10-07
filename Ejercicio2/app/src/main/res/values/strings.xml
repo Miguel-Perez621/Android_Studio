@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prueba2</string>
+    <string name="post">Post</string>
+    <string name="follows">Follows</string>
+    <string name="followers">Followers</string>
+    <string name="nombre_Usuario">Nombre_Usuario</string>
+</resources>
