@@ -11,8 +11,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:background="#100F0F"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +24,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
             android:gravity="center_vertical"
-            android:text="Home"
+            android:text="@string/button_Home"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="#FDF9F9"
@@ -43,7 +41,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
-            android:text="Search"
+            android:text="@string/button_Search"
             android:textColor="#F6F5F5"
             android:textSize="8sp"
             app:icon="@drawable/busqueda"
@@ -57,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
-            android:text="Library"
+            android:text="@string/button_Library"
             android:textColor="#F8F5F5"
             android:textSize="8sp"
             app:icon="@drawable/libros"
@@ -70,8 +68,6 @@
         android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="325dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:background="#0C0C0C"
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -109,8 +105,9 @@
                         android:layout_width="110dp"
                         android:layout_height="45dp"
                         android:layout_marginStart="104dp"
-                        android:text="Forest"
+                        android:text="@string/song1_name"
                         android:textSize="24sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -121,7 +118,7 @@
                         android:layout_width="125dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="104dp"
-                        android:text="System of a Down"
+                        android:text="@string/song1_band"
                         android:textAlignment="viewStart"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -166,11 +163,12 @@
 
                     <TextView
                         android:id="@+id/textView"
-                        android:layout_width="155dp"
-                        android:layout_height="41dp"
+                        android:layout_width="242dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="104dp"
-                        android:text="Instant Crush"
+                        android:text="@string/song2_name"
                         android:textSize="24sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -181,7 +179,7 @@
                         android:layout_width="125dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="104dp"
-                        android:text="Daft Punk"
+                        android:text="@string/song2_band"
                         android:textAlignment="viewStart"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -227,8 +225,9 @@
                         android:layout_width="155dp"
                         android:layout_height="41dp"
                         android:layout_marginStart="104dp"
-                        android:text="Who Wants To Live Forever"
+                        android:text="@string/song3_name"
                         android:textSize="16sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -239,7 +238,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="104dp"
-                        android:text="Queen"
+                        android:text="@string/song3_band"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -285,8 +284,9 @@
                         android:layout_width="155dp"
                         android:layout_height="41dp"
                         android:layout_marginStart="104dp"
-                        android:text="Rose Tatoo"
+                        android:text="@string/song4_name"
                         android:textSize="24sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -297,7 +297,7 @@
                         android:layout_width="116dp"
                         android:layout_height="18dp"
                         android:layout_marginStart="104dp"
-                        android:text="Dropick Murphys"
+                        android:text="@string/song4_band"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -324,9 +324,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
         android:background="#E3D7D7"
         app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -340,12 +337,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="15min"
+            android:text="@string/duracion"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:layout_constraintVertical_bias="0.434" />
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -355,7 +354,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13999999">
+            app:layout_constraintVertical_bias="0.07999998">
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -366,7 +365,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    tools:srcCompat="@drawable/soad_tabla" />
+                    app:srcCompat="@drawable/soad_tabla" />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -383,7 +382,7 @@
                     android:id="@+id/imageView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/daft_punk_tabla" />
+                    app:srcCompat="@drawable/daft_punk_tabla" />
 
                 <ImageView
                     android:id="@+id/imageView8"
@@ -398,37 +397,40 @@
             android:id="@+id/textView9"
             android:layout_width="222dp"
             android:layout_height="41dp"
-            android:layout_marginBottom="68dp"
-            android:text="Ejemplo lista 1"
+            android:layout_marginBottom="88dp"
+            android:text="@string/Lista"
             android:textAlignment="viewStart"
             android:textSize="28sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="33dp"
             android:layout_height="24dp"
-            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.884"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.17000002"
             app:srcCompat="@drawable/profile_user_icon_123375" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="77dp"
             android:layout_height="19dp"
-            android:layout_marginBottom="40dp"
-            android:text="Usuario"
+            android:layout_marginBottom="52dp"
+            android:text="@string/Usuario"
             android:textSize="12sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.187"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toEndOf="@+id/imageView9" />
 
         <Button
             android:id="@+id/button8"

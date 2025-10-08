@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Ejercicio_Evaluable</string>
+
+    <string name="Usuario">MPC261</string>
+    <string name="Lista">Lista Variada</string>
+    <string name="duracion">15 min</string>
+
+    <string name="song1_name">Forest</string>
+    <string name="song1_band">System of a Down</string>
+
+    <string name="song2_name">One more time</string>
+    <string name="song2_band">Daft Punk</string>
+
+    <string name="song3_name">Who wants to live Forever</string>
+    <string name="song3_band">Queen</string>
+
+    <string name="song4_name">Rose Tatoo</string>
+    <string name="song4_band">Dropick Murphys</string>
+
+    <string name="button_Home">Home</string>
+    <string name="button_Search">Search</string>
+    <string name="button_Library">Library</string>
 </resources>
