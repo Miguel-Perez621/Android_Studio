@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/barra_inferior"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +66,6 @@
         android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="325dp"
-        android:background="#0C0C0C"
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,18 +74,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#050505"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#1B1919">
+                android:layout_height="wrap_content">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="99dp"
-                    android:background="#F6F4F4">
+                    android:background="@color/negro_lista">
 
                     <ImageView
                         android:id="@+id/imageView"
@@ -120,6 +115,7 @@
                         android:layout_marginStart="104dp"
                         android:text="@string/song1_band"
                         android:textAlignment="viewStart"
+                        android:textColor="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -133,7 +129,7 @@
                         android:layout_marginEnd="16dp"
                         android:background="@android:color/transparent"
                         app:icon="@drawable/dots"
-                        app:iconTint="#100F0F"
+                        app:iconTint="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -148,7 +144,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="99dp">
+                    android:layout_height="99dp"
+                    android:background="@color/negro_lista">
 
                     <ImageView
                         android:id="@+id/imageView2"
@@ -181,6 +178,7 @@
                         android:layout_marginStart="104dp"
                         android:text="@string/song2_band"
                         android:textAlignment="viewStart"
+                        android:textColor="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -194,7 +192,7 @@
                         android:layout_marginEnd="16dp"
                         android:background="@android:color/transparent"
                         app:icon="@drawable/dots"
-                        app:iconTint="#131313"
+                        app:iconTint="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -208,7 +206,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="99dp">
+                    android:layout_height="99dp"
+                    android:background="@color/negro_lista">
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -239,6 +238,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="104dp"
                         android:text="@string/song3_band"
+                        android:textColor="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -252,7 +252,7 @@
                         android:layout_marginEnd="16dp"
                         android:background="@android:color/transparent"
                         app:icon="@drawable/dots"
-                        app:iconTint="#1B1919"
+                        app:iconTint="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -266,7 +266,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="99dp">
+                    android:layout_height="99dp"
+                    android:background="@color/negro_lista">
 
                     <ImageView
                         android:id="@+id/imageView4"
@@ -298,6 +299,7 @@
                         android:layout_height="18dp"
                         android:layout_marginStart="104dp"
                         android:text="@string/song4_band"
+                        android:textColor="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -311,7 +313,7 @@
                         android:layout_marginEnd="16dp"
                         android:background="@android:color/transparent"
                         app:icon="@drawable/dots"
-                        app:iconTint="#191818"
+                        app:iconTint="@color/blanco_interfaz"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -324,7 +326,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#E3D7D7"
+        android:background="@drawable/gradiente_background"
         app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
@@ -338,6 +340,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/duracion"
+            android:textColor="@color/blanco_interfaz"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -440,7 +443,7 @@
             android:background="@android:color/transparent"
             android:pointerIcon="context_menu"
             app:icon="@drawable/flecha"
-            app:iconTint="#0B0A0A"
+            app:iconTint="@color/blanco_interfaz"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
