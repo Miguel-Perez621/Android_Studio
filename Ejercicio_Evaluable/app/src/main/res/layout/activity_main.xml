@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#100F0F"
+        android:background="@color/barra_inferior"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,13 +27,13 @@
             android:text="@string/button_Home"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="#FDF9F9"
+            android:textColor="@color/blanco_interfaz"
             android:textSize="8sp"
             app:icon="@drawable/hogar"
             app:iconGravity="textTop"
             app:iconPadding="8dp"
             app:iconSize="25dp"
-            app:iconTint="#3F51B5" />
+            app:iconTint="@color/blanco_interfaz" />
 
         <Button
             android:id="@+id/button2"
@@ -42,12 +42,12 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
             android:text="@string/button_Search"
-            android:textColor="#F6F5F5"
+            android:textColor="@color/blanco_interfaz"
             android:textSize="8sp"
             app:icon="@drawable/busqueda"
             app:iconGravity="textTop"
             app:iconSize="30dp"
-            app:iconTint="#3F51B5" />
+            app:iconTint="@color/blanco_interfaz" />
 
         <Button
             android:id="@+id/button3"
@@ -56,12 +56,12 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
             android:text="@string/button_Library"
-            android:textColor="#F8F5F5"
+            android:textColor="@color/blanco_interfaz"
             android:textSize="8sp"
             app:icon="@drawable/libros"
             app:iconGravity="textTop"
             app:iconSize="30dp"
-            app:iconTint="#3F51B5" />
+            app:iconTint="@color/blanco_interfaz" />
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
