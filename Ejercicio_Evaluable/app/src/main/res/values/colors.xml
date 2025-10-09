@@ -6,5 +6,6 @@
     <color name="barra_inferior">#100F0F</color>
     <color name="blanco_interfaz">#CCC7C7</color>
     <color name="negro_lista">#1C1C1C</color>
+    <color name="reproduccion">#4DBD42</color>
 
 </resources>
